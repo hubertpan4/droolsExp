@@ -1,0 +1,32 @@
+template header
+age[]
+profile
+priorClaims
+policyType
+carRisk
+base
+reason
+
+package org.drools.examples.decisiontable;
+import com.mycompany.hibernateExp.domain.Car;
+
+template "Pricing bracket"
+age
+policyType
+carRisk
+base
+
+rule "Pricing bracket_@{row.rowNumber}"
+
+    when
+        Driver(age >= @{age0}, age <= @{age1}
+            , priorClaims == "@{priorClaims}"
+            , locationRiskProfile == "@{profile}"
+        )
+        policy: Policy(type == "@{policyType}")
+        Car(riskLevel == "@{carRisk}")
+    then
+        policy.setBasePrice(@{base});
+        System.out.println("@{reason}");
+end
+end template
