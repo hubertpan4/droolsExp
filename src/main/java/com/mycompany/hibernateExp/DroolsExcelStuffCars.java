@@ -78,7 +78,7 @@ public class DroolsExcelStuffCars {
             //the data we are interested in starts at row 10, column 3
             basePricingDRL = converter.compile(getSpreadsheetStream(), getBasePricingRulesStream(), 10, 3);
             //the data we are interested in starts at row 30, column 3
-            promotionalPricingDRL = converter.compile(getSpreadsheetStream(), getPromotionalPricingRulesStream(), 30, 3);
+            promotionalPricingDRL = converter.compile(getSpreadsheetStream(), getPromotionalPricingRulesStream(), 42, 3);
         } catch (IOException e) {
             throw new IllegalArgumentException("Invalid spreadsheet stream.", e);
         }
