@@ -46,7 +46,7 @@ public class DroolsExcelStuff {
 
         ksession.insert(driver);
         ksession.insert(policy);
-
+        
         ksession.fireAllRules();
 
         System.out.println("BASE PRICE IS: " + policy.getBasePrice());
