@@ -35,6 +35,12 @@ public class PolicyCalculator {
     final static Logger logger = LoggerFactory.getLogger(PolicyCalculator.class);
     private KnowledgeBase kbase;
     
+    /**
+     * Calculate the policy for a given driver and an associated car
+     * @param driver
+     * @param car
+     * @return 
+     */
     public Policy calculatePolicy(Driver driver, Car car){
         //create empty policy
         Policy policy = new Policy();
