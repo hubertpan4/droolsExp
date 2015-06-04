@@ -39,7 +39,7 @@ public class PolicyCalculator {
      * Calculate the policy for a given driver and an associated car
      * @param driver
      * @param car
-     * @return 
+     * @return the calculated policy
      */
     public Policy calculatePolicy(Driver driver, Car car){
         //create empty policy
