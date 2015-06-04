@@ -53,7 +53,6 @@ public class PolicyCalculatorTest {
         Policy result = instance.calculatePolicy(driver, car);
         assertEquals(125, result.getBasePrice());
         assertEquals(20, result.getDiscountPercent());
-        // TODO review the generated test code and remove the default call to fail.
     }
     
 }
