@@ -14,6 +14,7 @@ public class Driver {
     private Integer age = new Integer(30);
     private Integer priorClaims = new Integer(0);
     private String locationRiskProfile = "LOW";
+    private long id;
 
     public Integer getAge() {
         return age;
@@ -45,5 +46,19 @@ public class Driver {
 
     public void setPriorClaims(Integer priorClaims) {
         this.priorClaims = priorClaims;
+    }
+
+    /**
+     * @return the id
+     */
+    public long getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    protected void setId(long id) {
+        this.id = id;
     }
 }
